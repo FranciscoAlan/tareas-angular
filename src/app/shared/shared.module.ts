@@ -6,17 +6,20 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TitleComponent } from './title/title.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    TitleComponent
+    TitleComponent,
+    LoadingComponent
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    TitleComponent
+    TitleComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,

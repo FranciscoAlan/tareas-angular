@@ -1,0 +1,70 @@
+<app-title [title]="'Billetes'" [subtitle]="'Generar el algoritmo para que un cajero pueda determinar la cantidad de billetes que tiene que dar de cada una de las denominaciones (No es necesario validar si tiene o no disponible esa cantidad)'"></app-title>
+<div class="container mt-5">
+  <form (ngSubmit)="feriar()">
+    <div class="from-group mb-5">
+      <div class="row">
+        <div class="col-3">
+          <label for="feria" class="control-label sr-only text-right">Monto a feriar</label>
+        </div>
+        <div class="col-6">
+          <input type="text" class="form-control col-6" placeholder="Tu número aquí" name="feria" #feria="ngModel" [(ngModel)]="monto">
+        </div>
+        <div class="col-3">
+          <button class="btn btn-success">Feriar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <div class="table-responsive">
+        <table class="table table-bordered bg-white">
+          <thead>
+            <tr>
+              <th>Denominación</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>De 500</td>
+              <td>{{de500}}</td>
+            </tr>
+            <tr>
+              <td>De 200</td>
+              <td>{{de200}}</td>
+            </tr>
+            <tr>
+              <td>De 100</td>
+              <td>{{de100}}</td>
+            </tr>
+            <tr>
+              <td>De 50</td>
+              <td>{{de50}}</td>
+            </tr>
+            <tr>
+              <td>De 20</td>
+              <td>{{de20}}</td>
+            </tr>
+            <tr>
+              <td>De 10</td>
+              <td>{{de10}}</td>
+            </tr>
+            <tr>
+              <td>De 5</td>
+              <td>{{de5}}</td>
+            </tr>
+            <tr>
+              <td>De 2</td>
+              <td>{{de2}}</td>
+            </tr>
+            <tr>
+              <td>De 1</td>
+              <td>{{de1}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

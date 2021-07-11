@@ -4,16 +4,24 @@ import { PrincipalComponent } from './pages/principal/principal.component';
 import { SharedModule } from '../shared/shared.module';
 import { PruebaRoutingModule } from './prueba.routes';
 import { PolindromosComponent } from './components/polindromos/polindromos.component';
+import { FibonacciComponent } from './components/fibonacci/fibonacci.component';
+import { FormsModule } from '@angular/forms';
+import { BilletesComponent } from './components/billetes/billetes.component';
+import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
 
 
 
 @NgModule({
   declarations: [
     PrincipalComponent,
-    PolindromosComponent
+    PolindromosComponent,
+    FibonacciComponent,
+    BilletesComponent,
+    RefactorizacionComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
     PruebaRoutingModule
   ]

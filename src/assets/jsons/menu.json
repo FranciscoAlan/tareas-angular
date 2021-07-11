@@ -1,0 +1,29 @@
+{
+  "menu": [
+    {
+      "name": "Inicio",
+      "linkActiveExact": true,
+      "link": ["/"]
+    },
+    {
+      "name": "Políndromos",
+      "linkActiveExact": false,
+      "link": ["/polindromos"]
+    },
+    {
+      "name": "Fibonacci",
+      "linkActiveExact": false,
+      "link": ["/fibonacci"]
+    },
+    {
+      "name": "Billetes",
+      "linkActiveExact": false,
+      "link": ["/billetes"]
+    },
+    {
+      "name": "Factorización",
+      "linkActiveExact": false,
+      "link": ["/factorizacion"]
+    }
+  ]
+}
