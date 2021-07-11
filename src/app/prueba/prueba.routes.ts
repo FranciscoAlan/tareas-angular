@@ -5,6 +5,7 @@ import { PolindromosComponent } from './components/polindromos/polindromos.compo
 import { FibonacciComponent } from './components/fibonacci/fibonacci.component';
 import { BilletesComponent } from './components/billetes/billetes.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 const routes: Routes = [
   { path: '',
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: 'fibonacci', component: FibonacciComponent, data: { titulo: 'Fibonacci' } },
       { path: 'billetes', component: BilletesComponent, data: { titulo: 'Billetes' } },
       { path: 'refactorizacion', component: RefactorizacionComponent, data: { titulo: 'Re-Factorización' } },
+      { path: '**', component: InicioComponent, data: { titulo: 'BIENVENIDO' } },
     ],
   },
 ];
