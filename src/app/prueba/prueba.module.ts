@@ -8,6 +8,7 @@ import { FibonacciComponent } from './components/fibonacci/fibonacci.component';
 import { FormsModule } from '@angular/forms';
 import { BilletesComponent } from './components/billetes/billetes.component';
 import { RefactorizacionComponent } from './components/refactorizacion/refactorizacion.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 
 
@@ -17,7 +18,8 @@ import { RefactorizacionComponent } from './components/refactorizacion/refactori
     PolindromosComponent,
     FibonacciComponent,
     BilletesComponent,
-    RefactorizacionComponent
+    RefactorizacionComponent,
+    InicioComponent
   ],
   imports: [
     CommonModule,

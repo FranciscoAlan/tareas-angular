@@ -21,9 +21,9 @@
       "link": ["/billetes"]
     },
     {
-      "name": "Factorización",
+      "name": "Re-Factorización",
       "linkActiveExact": false,
-      "link": ["/factorizacion"]
+      "link": ["/refactorizacion"]
     }
   ]
 }

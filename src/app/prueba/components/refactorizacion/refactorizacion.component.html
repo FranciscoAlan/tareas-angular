@@ -1,1 +1,31 @@
-<p>refactorizacion works!</p>
+<app-title [title]="'Factorización'" [subtitle]="'Generar el algoritmo para que un cajero pueda determinar la cantidad de billetes que tiene que dar de cada una de las denominaciones (No es necesario validar si tiene o no disponible esa cantidad)'"></app-title>
+<div class="container mt-5">
+  <form (ngSubmit)="onSubmit()">
+    <div class="from-group mb-5">
+      <div class="row">
+        <div class="col-4">
+          <input type="text" class="form-control col-6" placeholder="Canitdad de asistentes" name="feria" #feria="ngModel" [(ngModel)]="asistentes">
+        </div>
+        <div class="col-4">
+          <input type="text" class="form-control col-6" placeholder="Valor de K" name="feria" #feria="ngModel" [(ngModel)]="k">
+        </div>
+        <div class="col-4">
+          <button class="btn btn-success">Ejecutar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <pre>{{codigo}}</pre>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <p>Resultado anterior = {{resultadoAnterior}}. Tiempo: {{tiempoAnterior}}</p>
+      <p>Resultado nuevo = {{resultadoNuevo}}. Tiempo: {{tiempoNuevo}}</p>
+    </div>
+  </div>
+</div>
