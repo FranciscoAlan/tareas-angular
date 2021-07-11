@@ -1,0 +1,19 @@
+<app-title [title]="'Palíndromos'" [subtitle]="'Obtener el primer número primo palíndromo menor a mil'"></app-title>
+<div class="container mt-5">
+  <h3 class="text-center">Respuesta: <span class="text-success">{{ganador}}</span></h3>
+  <p class="text-center text-muted">Se muestran los números políndromos en color negro, los primos políndromos en ambar y en verde el primer número políndromo primo.</p>
+  <div class="row">
+    <div class="col-1" *ngFor="let numero of lista">
+      <div class="card">
+        <div class="card-body text-center" *ngIf="!numero.primero">
+          <span [ngClass]="{'text-warning': numero.primo}">
+            {{numero.valor}}
+          </span>
+        </div>
+        <div *ngIf="numero.primero" class=" card-body text-center bg-success text-white">
+          {{numero.valor}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

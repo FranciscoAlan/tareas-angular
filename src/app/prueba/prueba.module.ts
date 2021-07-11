@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { SharedModule } from '../shared/shared.module';
 import { PruebaRoutingModule } from './prueba.routes';
+import { PolindromosComponent } from './components/polindromos/polindromos.component';
 
 
 
 @NgModule({
   declarations: [
-    PrincipalComponent
+    PrincipalComponent,
+    PolindromosComponent
   ],
   imports: [
     CommonModule,
