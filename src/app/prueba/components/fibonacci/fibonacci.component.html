@@ -1,0 +1,55 @@
+<app-title [title]="'Fibonacci'" [subtitle]="'Dado un numero x encuentra el número de la secuencia anterior y posterior Fibonacci'"></app-title>
+<div class="container mt-5">
+  <form (ngSubmit)="serieFibonacci()">
+    <div class="from-group mb-5">
+      <div class="row">
+        <div class="col-3">
+          <label for="numeroFibonacci" class="control-label sr-only">Escribe un número</label>
+        </div>
+        <div class="col-6">
+          <input type="text" class="form-control col-6" placeholder="Tu número aquí" name="numeroFibonacci" #numeroFibonacci="ngModel" [(ngModel)]="numero">
+        </div>
+        <div class="col-3">
+          <button class="btn btn-success">Verificar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="alert alert-warning" *ngIf="advertencia">
+    {{advertencia}}
+  </div>
+  <div class="row" *ngIf="loading">
+    <div class="col-6 mx-auto">
+      <app-loading></app-loading>
+    </div>
+  </div>
+  <div *ngIf="!loading && resultado">
+    <div class="row mb-3">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-center">{{primero}}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-center">{{segundo}}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-center text-success">{{resultado}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
